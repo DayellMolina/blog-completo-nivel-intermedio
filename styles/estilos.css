@@ -1,0 +1,251 @@
+/* RESETEO DE ESTILOS DEL BODY  */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CONTENEDORES DEL BODY */
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+}
+
+/* FORMATOS DE LOS ENCABEZADOS */
+
+h1 {
+    font-family: cursive;
+    color: white;
+    line-height: 40px;
+    font-size: 35px;
+    margin: 90px 167px 90px 50px;
+}
+
+h1 strong {
+    color: #FFD089;
+}
+
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+h6 {
+    margin: 10px 0;
+}
+
+/* ESTILOS DE LA CABECERA Y BARRA DE NAVEGACION */
+
+.hero {
+    height: 300px;
+    background-color: #FF5757;
+    /* background-image: url("../images/hero.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 700px 500px;
+    background-position: right; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    object-fit: cover;
+}
+
+.header {
+    background-color:#FF5757;
+    color: white;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ol li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;  
+}
+
+ol li {
+    list-style: none;
+}
+
+ol {
+    display: flex;
+}
+
+.logo {
+    width: 70px;
+    margin-top: 12px;
+    margin-left: 25px;
+}
+
+.portada {
+    width: 500px;
+}
+
+/* ESTILO DE PROYECTOS DESTACADOS */
+
+.portfolio {
+    background-color: #fafafa;
+    padding: 20px;
+}
+
+.project {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 1.5px 1.5px 30px 1px #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project_details {
+    width: 500px;
+}
+
+.project_title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project_date, .project_url {
+    margin: 10px 0;
+}
+
+.project_description {
+    font-size: 25px;
+}
+
+/* ESTILOS DE LA EXPERIENCIA */
+
+.eventos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.event {
+    margin: 10px;
+    width: 480px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.event_portada {
+    width: 480px;
+    padding: auto;
+    object-fit: cover;
+}
+
+.event_detail {
+    margin: 20px 40px;
+    margin-top: -60px;
+    background-color: whitesmoke;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+
+.event_container {
+    margin: 0;
+}
+
+.event_url {
+    border: 1px solid #FF5757;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #FF5757;
+    border-radius: 5px;
+}
+
+.event_text {
+    margin-left: 20px;
+}
+
+/* ESTILOS DEL PIE DE PÁGINA Y FORMULARIO */
+
+.footer {
+    background-color: #FF5757;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer_logo {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.footer a {
+    color: yellowgreen;
+}
+
+.contact {
+    background-color: #FF8686;
+    color: white;
+    height: 150px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.form_email input {
+    border-color: gray;
+    padding: 5px;
+    border-radius: 8px;
+    border-style: solid;
+}
+
+.form_email {
+    margin-left: 30px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ESTILOS DE LAS REDES SOCIALES */
+
+.social {
+    margin-right: 60px;
+}
+
+.social_link {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+    margin: 10px;
+}
+
+.social_link.twitter {
+    background-image: url("../images/twitter.png");
+}
+
+.social_link.facebook {
+    background-image: url("../images/face.png");
+}
+
+.social_link.gitHub {
+    background-image: url("../images/git.png");
+}
+
+.social_link.instagram {
+    background-image: url("../images/insta.png");
+}
+
