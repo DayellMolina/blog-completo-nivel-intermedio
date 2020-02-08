@@ -1,0 +1,155 @@
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 1em;
+    }
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero img {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+
+    }
+    h1 {
+        font-size: 2em;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .burger_button {
+        display: block;
+    }
+    
+     .header {
+        display: block;
+        height: auto;
+     }
+    .header ol {
+        display: block;
+    }
+    .header ol li {
+        height: 50px;    
+    }
+    .header a {
+        justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    .header .logo {
+        text-align: center;
+    }
+
+    .menu {
+        position: fixed;
+        background-color: rgba(255,134,134,.9 );
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+
+    .menu.is_active {
+        left: 0;
+    }
+
+    .project {
+        display: block;
+    }
+
+    .project_imageContainer {
+        width: auto;
+        text-align: center;
+    }
+    .project_details {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .project_course, .project_date, .project_url {
+        margin: .4em 0;
+    }
+    .project_title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .projecy_url {
+        font-size: 1em;
+    }
+    .project_course{
+        font-size: .8em;
+    }
+    .project_date {
+        font-size: 1em;
+    }
+    .project_description {
+        font-size: .8em;
+    }
+
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event_portada {
+        width: 100%;
+    }
+    footer .container {
+        padding: 1.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 1.5em;
+    }
+    .hero img{
+        width: auto;
+        object-fit: cover; 
+    }
+    .project_details {
+        font-size: 12px;
+    }
+    .event_detail{
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact {
+        height: 300px;
+        display: block;
+        text-align: center;
+        padding-top: 2em;
+    }
+    .social {
+        margin-top: 2em;
+        margin-right: 0;
+    }
+    footer .container {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 320px) {
+   
+    h1 {
+        font-size: 1em;
+    }
+    .hero img{
+        width: 100%;
+        object-fit: cover; 
+    }
+}

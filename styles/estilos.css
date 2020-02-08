@@ -1,3 +1,36 @@
+/*  CODIGO DEL LOGO DE MENU PARA RESPONSIVE DESING*/
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?5obzce');
+    src:  url('../fonts/icomoon.eot?5obzce#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?5obzce') format('truetype'),
+      url('../fonts/icomoon.woff?5obzce') format('woff'),
+      url('../fonts/icomoon.svg?5obzce#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-menu:before {
+    content: "\e900";
+  }
+
 /* RESETEO DE ESTILOS DEL BODY  */
 
 body {
@@ -9,7 +42,8 @@ body {
 /* CONTENEDORES DEL BODY */
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
+    flex: 1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
@@ -26,6 +60,7 @@ h1 {
     line-height: 40px;
     font-size: 35px;
     margin: 90px 167px 90px 50px;
+    z-index: 1;
 }
 
 h1 strong {
@@ -45,6 +80,15 @@ h6 {
 
 /* ESTILOS DE LA CABECERA Y BARRA DE NAVEGACION */
 
+.header {
+    background-color:#FF5757;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 .hero {
     height: 300px;
     background-color: #FF5757;
@@ -58,17 +102,15 @@ h6 {
     object-fit: cover;
 }
 
-.header {
-    background-color:#FF5757;
-    color: white;
-    display: flex;
-    height: 70px;
-    align-items: center;
-    justify-content: space-between;
-}
+/* .hero_portada {
+    width: 450px;
+    margin-left: 850px;
+    margin-top: -280px;
+} */
 
 ol li a {
     text-decoration: none;
+    display: flex;
     color: white;
     padding: 0 15px;  
 }
@@ -81,14 +123,13 @@ ol {
     display: flex;
 }
 
-.logo {
+.logo_logo {
     width: 70px;
     margin-top: 12px;
-    margin-left: 25px;
 }
 
 .portada {
-    width: 500px;
+    width: 400px;
 }
 
 /* ESTILO DE PROYECTOS DESTACADOS */
@@ -109,10 +150,19 @@ ol {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .project_details {
-    width: 500px;
+    width: 50%;
+}
+
+.project_imageContainer {
+    width: 40%;
+}
+
+.project_imageContainer img {
+    max-width: 100%;
 }
 
 .project_title {
@@ -137,8 +187,8 @@ ol {
 }
 
 .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     overflow: hidden;
@@ -173,8 +223,12 @@ ol {
 
 .event_text {
     margin-left: 20px;
+    text-align: center;
 }
 
+.html_video{
+    text-align: center;
+}
 /* ESTILOS DEL PIE DE PÁGINA Y FORMULARIO */
 
 .footer {
@@ -183,6 +237,7 @@ ol {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer_logo {
@@ -201,6 +256,7 @@ ol {
     display: flex;
     align-items:center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .form_email input {
@@ -249,3 +305,21 @@ button {
     background-image: url("../images/insta.png");
 }
 
+/*  DANDO ESTILOS AL BOTON DE MENU  */
+
+.burger_button {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: white;
+    font-size: 1.2em;
+}

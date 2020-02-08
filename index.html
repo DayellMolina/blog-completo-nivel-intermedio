@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/nasa.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/estilos.css">
+    <link rel="stylesheet" href="styles/media.css">
     <title>My Space Alejandra</title>
 </head>
 
 <!-- INICIA BARRA DE NAVEGACION -->
 <body>
+    <i class="icon-menu burger_button" id="burger_menu"></i>
 <header class="header">
     <div class="container">
         <figure class="logo">
-            <img src="/images/nasa.png" alt="Logo de la Página" class="logo">
+            <img src="/images/nasa.png" alt="Logo de la Página" class="logo_logo">
         </figure>
-    <nav class="menu">
-        <ol>
+        <nav class="menu is_active">
+         <ol>
             <li>
                 <a class="link" href="#portafolio">Portafolio</a class="link">
             </li>
@@ -27,8 +29,8 @@
             <li>
                 <a class="link" href="#contacto">Trabajemos Juntos</a>
             </li>
-        </ol>
-    </nav>
+            </ol>
+        </nav>
     </div>
 </header>
 <!-- ACABA BARRA DE NAVEGACION -->
@@ -38,8 +40,8 @@
 <section class="hero">
     <div class="container">
     <h1>
-        Hola! <strong>Soy una Desarrolladora Web</strong> </br>
-        en busca de espectaculares diseños y maravilloso </br>
+        Hola! <strong>Soy una Desarrolladora Web</strong>
+        en busca de espectaculares diseños y maravilloso
         <strong> código legible y semántico </strong> 
     </h1>
     <img src="images/hero.jpg" alt="imágen de portada" class="hero">
@@ -77,9 +79,13 @@
         </figure>
         </article>
         </section>
-    </div>
-    <div class="container">
-        <h2 class="event_text">Más Sobre mi Experiencia</h2>
+</div>
+<div class="html_video">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/IP3OmWpUuIg" 
+frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+</div>        
+<h2 class="event_text">Más Sobre mi Experiencia</h2>
     </div> 
 <section id="experiencia" class="eventos">
     <div class="container">
@@ -143,7 +149,7 @@
 <!-- TERMINA SECCION PRINCIPAL -->
 
 <!-- INICIA PIE DE PÁGINA -->
-<footer class="footer">
+ <footer class="footer">
     <div class="container">
     <div>
         <p>
@@ -159,6 +165,33 @@
         </div>
     </div>
 </footer>
+<script>
+   console.log();
+    const ipad = window.matchMedia('screen and (max-width: 767px)')
+    const menu = document.querySelector('.menu');
+        /*console.log (menu);*/
+        const burgerButton = document.querySelector('#burger_menu');
+        /*console.log(burgerButton);*/
+
+
+        ipad.addListener(validation)
+
+        function validation (event) {
+            if (event.matches) {
+        burgerButton.addEventListener('click',hideShow)
+            } else {
+        burgerButton.removeEventListener('click',hideShow)
+            }
+        }
+
+        function hideShow() {
+            if (menu.classList.contains('is_active')) {
+                 menu.classList.remove('is_active');
+            } else {
+                menu.classList.add('is_active');
+            }
+        }
+</script>
 <!-- FIN DE PIE DE PÁGINA -->
 </body>
 </html>
